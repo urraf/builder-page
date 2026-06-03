@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahraf Packers and Movers — Trusted Relocation Services</title>
+    <meta name="description" content="Nahraf Packers and Movers offers reliable, affordable, and professional packing and moving services across India. Domestic, international, car transport, and secure storage solutions.">
+    <meta name="keywords" content="Nahraf packers and movers, packers and movers, movers and packers, relocation services, domestic moving, international moving, car transport, secure storage">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-truck-moving"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-brand">Nahraf</span>
+                    <span class="logo-tagline">Packers & Movers</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-pay-btn" id="nav-pay-btn" onclick="openPaymentModal()">
+                <i class="fas fa-credit-card"></i> Pay Now
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="Nahraf Packers Moving Truck" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-shield-halved"></i> India's Trusted Moving Partner
+            </div>
+            <h1 class="hero-title">
+                We Move Your <span class="gradient-text">World</span>,<br>
+                With Care & Precision
+            </h1>
+            <p class="hero-subtitle">
+                Professional packing, safe transportation, and timely delivery — all under one roof.
+                Relocate stress-free with Nahraf Packers & Movers.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-lg pulse-btn" id="hero-pay-btn" onclick="openPaymentModal()">
+                    <i class="fas fa-wallet"></i> Make a Payment
+                </button>
+                <a href="#services" class="btn btn-outline btn-lg" id="hero-services-btn">
+                    <i class="fas fa-arrow-right"></i> Our Services
+                </a>
+            </div>
+            <div class="hero-stats-strip">
+                <div class="hero-stat">
+                    <span class="hero-stat-num" data-target="15000">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Happy Customers</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-num" data-target="500">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Cities Served</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-num" data-target="20">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Complete relocation solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" id="service-domestic">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <h3>Domestic Moving</h3>
+                    <p>Safe and secure household shifting across all Indian cities with professional packing and timely delivery.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+                <div class="service-card" id="service-international">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <h3>International Moving</h3>
+                    <p>Hassle-free international relocation with customs clearance, door-to-door service, and complete documentation support.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+                <div class="service-card" id="service-car">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <h3>Car Transport</h3>
+                    <p>Specialized car carrier services for scratch-free and damage-free vehicle transportation across India.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+                <div class="service-card" id="service-office">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <h3>Office Relocation</h3>
+                    <p>Systematic office moving with minimal downtime. We handle IT equipment, furniture, and confidential documents.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+                <div class="service-card" id="service-storage">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                    </div>
+                    <h3>Secure Storage</h3>
+                    <p>Climate-controlled, 24/7 monitored warehouses for short-term and long-term storage of your valuables.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+                <div class="service-card" id="service-commercial">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                    </div>
+                    <h3>Commercial Moving</h3>
+                    <p>End-to-end logistics and warehousing solutions for businesses, factories, and commercial establishments.</p>
+                    <div class="service-hover-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US SECTION ===== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Advantages</span>
+                <h2 class="section-title">Why Choose <span class="gradient-text">Nahraf</span>?</h2>
+                <p class="section-subtitle">We stand out from the rest with our commitment to excellence</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" id="feature-insurance">
+                    <div class="feature-num">01</div>
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Transit Insurance</h3>
+                    <p>Complete insurance coverage for all your goods during transit, giving you total peace of mind.</p>
+                </div>
+                <div class="feature-card" id="feature-packing">
+                    <div class="feature-num">02</div>
+                    <div class="feature-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Quality Packing</h3>
+                    <p>Multi-layer packing with premium materials to ensure zero damage to your belongings.</p>
+                </div>
+                <div class="feature-card" id="feature-delivery">
+                    <div class="feature-num">03</div>
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>On-Time Delivery</h3>
+                    <p>We value your time. Guaranteed on-time pickup and delivery with real-time tracking.</p>
+                </div>
+                <div class="feature-card" id="feature-pricing">
+                    <div class="feature-num">04</div>
+                    <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Best Pricing</h3>
+                    <p>Transparent pricing with no hidden charges. Get the best value for your money.</p>
+                </div>
+                <div class="feature-card" id="feature-support">
+                    <div class="feature-num">05</div>
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to address your queries at any time of the day.</p>
+                </div>
+                <div class="feature-card" id="feature-network">
+                    <div class="feature-num">06</div>
+                    <div class="feature-icon"><i class="fas fa-map-location-dot"></i></div>
+                    <h3>Pan-India Network</h3>
+                    <p>Extensive network across 500+ cities for seamless door-to-door relocation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAYMENT CTA SECTION ===== -->
+    <section class="payment-cta" id="payment-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <div class="cta-icon-wrap">
+                        <i class="fas fa-indian-rupee-sign"></i>
+                    </div>
+                    <h2>Quick & Secure <span class="gradient-text">Online Payment</span></h2>
+                    <p>Pay for your moving services instantly using our secure Razorpay payment gateway. Enter any custom amount and pay via UPI, cards, net banking, or wallets.</p>
+                    <div class="cta-features">
+                        <div class="cta-feat"><i class="fas fa-lock"></i> 256-bit SSL Encrypted</div>
+                        <div class="cta-feat"><i class="fas fa-bolt"></i> Instant Confirmation</div>
+                        <div class="cta-feat"><i class="fas fa-receipt"></i> Digital Receipt</div>
+                    </div>
+                    <button class="btn btn-primary btn-lg pulse-btn" id="cta-pay-btn" onclick="openPaymentModal()">
+                        <i class="fas fa-wallet"></i> Pay Now
+                    </button>
+                </div>
+                <div class="cta-visual">
+                    <div class="payment-methods-grid">
+                        <div class="pm-card"><i class="fas fa-credit-card"></i><span>Credit Card</span></div>
+                        <div class="pm-card"><i class="fas fa-building-columns"></i><span>Net Banking</span></div>
+                        <div class="pm-card"><i class="fas fa-mobile-screen-button"></i><span>UPI</span></div>
+                        <div class="pm-card"><i class="fas fa-wallet"></i><span>Wallets</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Reviews</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+                <p class="section-subtitle">Real stories from our satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="testimonial-1">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent service! The team was very professional and careful with all our belongings. Moved from Delhi to Mumbai without a single scratch."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RA</div>
+                        <div class="author-info">
+                            <strong>Rajesh Agarwal</strong>
+                            <span>Delhi → Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" id="testimonial-2">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing packing quality and on-time delivery. The online payment option made it so convenient. Will definitely recommend Nahraf to everyone!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div class="author-info">
+                            <strong>Priya Kumar</strong>
+                            <span>Bangalore → Chennai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" id="testimonial-3">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testimonial-text">"Great experience with car transport service. My car was delivered in perfect condition. The team kept me updated throughout the process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <strong>Amit Singh</strong>
+                            <span>Hyderabad → Pune</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item" id="contact-phone">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 93003 00300</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@nahraf.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-address">
+                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <strong>Address</strong>
+                            <p>New Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-hours">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Working Hours</strong>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="form-name" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="form-phone" placeholder="Phone Number *" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" rows="4" placeholder="Your Message *" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" id="form-submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon"><i class="fas fa-truck-moving"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-brand">Nahraf</span>
+                            <span class="logo-tagline">Packers & Movers</span>
+                        </div>
+                    </a>
+                    <p>Your trusted relocation partner. We make moving easy, safe, and affordable for everyone.</p>
+                    <div class="footer-social">
+                        <a href="#" id="social-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" id="social-tw" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="social-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="social-in" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Domestic Moving</a></li>
+                        <li><a href="#services">International Moving</a></li>
+                        <li><a href="#services">Car Transport</a></li>
+                        <li><a href="#services">Office Relocation</a></li>
+                        <li><a href="#services">Secure Storage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Payment</h4>
+                    <ul>
+                        <li><a href="#" onclick="openPaymentModal(); return false;">Pay Online</a></li>
+                        <li><a href="#payment-cta">Payment Methods</a></li>
+                    </ul>
+                    <button class="btn btn-primary footer-pay-btn" onclick="openPaymentModal()">
+                        <i class="fas fa-credit-card"></i> Pay Now
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nahraf Packers & Movers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== PAYMENT MODAL ===== -->
+    <div class="modal-overlay" id="payment-modal">
+        <div class="modal" id="payment-modal-content">
+            <button class="modal-close" id="modal-close" onclick="closePaymentModal()" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-indian-rupee-sign"></i>
+                </div>
+                <h2>Make a Payment</h2>
+                <p>Enter the amount you'd like to pay securely via Razorpay</p>
+            </div>
+            <div class="modal-body">
+                <div class="amount-input-wrap">
+                    <span class="currency-symbol">₹</span>
+                    <input type="number" id="payment-amount" class="amount-input" placeholder="Enter amount" min="1" step="1" autofocus>
+                </div>
+                <div class="quick-amounts">
+                    <button class="quick-amt-btn" onclick="setAmount(500)">₹500</button>
+                    <button class="quick-amt-btn" onclick="setAmount(1000)">₹1,000</button>
+                    <button class="quick-amt-btn" onclick="setAmount(5000)">₹5,000</button>
+                    <button class="quick-amt-btn" onclick="setAmount(10000)">₹10,000</button>
+                    <button class="quick-amt-btn" onclick="setAmount(25000)">₹25,000</button>
+                    <button class="quick-amt-btn" onclick="setAmount(50000)">₹50,000</button>
+                </div>
+                <div class="payment-details-form">
+                    <div class="form-group">
+                        <input type="text" id="payer-name" placeholder="Your Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="payer-email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="payer-phone" placeholder="Phone Number *" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" id="razorpay-pay-btn" onclick="initiatePayment()">
+                    <i class="fas fa-lock"></i> Pay Securely
+                </button>
+                <div class="payment-secure-info">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Payments are secured by Razorpay. 256-bit SSL encryption.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FLOATING PAY BUTTON ===== -->
+    <button class="floating-pay-btn" id="floating-pay-btn" onclick="openPaymentModal()" aria-label="Pay Now">
+        <i class="fas fa-indian-rupee-sign"></i>
+        <span>Pay</span>
+    </button>
+
+    <!-- Razorpay SDK -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
