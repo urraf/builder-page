@@ -152,8 +152,8 @@ function setAmount(amount) {
 
 // ===== PAYMENT CONFIGURATION =====
 // Set DEMO_MODE to false and add your real Razorpay key to accept real payments
-const DEMO_MODE = true;
-const RAZORPAY_KEY = 'rzp_test_XXXXXXXXXXXX'; // ← Replace with your real Razorpay Key ID
+const DEMO_MODE = false;
+const RAZORPAY_KEY = 'rzp_test_Sx4LzV9FYBBq9f'; // ← Replace with your real Razorpay Key ID
 
 // ===== RAZORPAY PAYMENT INTEGRATION =====
 function initiatePayment() {
@@ -448,6 +448,28 @@ function openRazorpayCheckout(amount, name, email, phone) {
         prefill: { name, email, contact: phone },
         notes: { service: 'Packers and Movers', customer_name: name },
         theme: { color: '#f59e0b' },
+        config: {
+            display: {
+                blocks: {
+                    upi: {
+                        name: 'Pay using UPI',
+                        instruments: [
+                            { method: 'upi', flows: ['collect', 'intent', 'qr'] }
+                        ]
+                    },
+                    other: {
+                        name: 'Other Methods',
+                        instruments: [
+                            { method: 'card' },
+                            { method: 'netbanking' },
+                            { method: 'wallet' }
+                        ]
+                    }
+                },
+                sequence: ['block.upi', 'block.other'],
+                preferences: { show_default_blocks: true }
+            }
+        },
         modal: {
             ondismiss: function () {
                 showToast('Payment was cancelled', 'warning');
